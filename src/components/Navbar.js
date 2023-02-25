@@ -17,6 +17,7 @@ const Navbar = () => {
     }
     return (
         <div>
+            {/* responsive navbar */}
             <Box className={dynamicClass}>
                 <Box sx={{
                     display: 'flex',
@@ -35,6 +36,8 @@ const Navbar = () => {
                     <a className='menu icon-right'><LinkedInIcon /></a>                    
                 </Box>
             </Box>
+                {/* responsive navbar end  */}
+
             <Box
                 sx={{
                     display: 'flex',

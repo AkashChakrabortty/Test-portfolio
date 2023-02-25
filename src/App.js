@@ -12,12 +12,14 @@ function App() {
     <div className="App">
       <div className='parent-div'>
         <Navbar />
-        <Banner />
-        <KnowMeMore />
-        <Skills />
-        <Projects />
-        <ContactMe />
-        <Footer />
+        <div className='parent-wrapper'>
+          <Banner />
+          <KnowMeMore />
+          <Skills />
+          <Projects />
+          <ContactMe />
+          <Footer />
+        </div>
       </div>
     </div >
   );
