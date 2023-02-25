@@ -16,23 +16,23 @@ const Navbar = () => {
         dynamicClass = 'side-menu-2'
     }
     return (
-        <div>
+        <div className='nav-wrapper'>
             <Box className={dynamicClass}>
                 <Box sx={{
                     display: 'flex',
                     flexDirection: 'column',
                 }}>
-                    <a className='menu2'>About</a>
-                    <a className='menu2'>Skills</a>
-                    <a className='menu2'>Projects</a>
-                    <a className='menu2'>Contact</a>
+                    <a href='/' className='menu2'>About</a>
+                    <a href='/' className='menu2'>Skills</a>
+                    <a href='/' className='menu2'>Projects</a>
+                    <a href='/' className='menu2'>Contact</a>
                 </Box>
 
-                <Box sx={{                    
+                <Box sx={{
                     marginTop: '15px'
                 }}>
-                    <a className='menu'><GitHubIcon /></a>
-                    <a className='menu icon-right'><LinkedInIcon /></a>                    
+                    <a href='/' className='menu'><GitHubIcon /></a>
+                    <a href='/' className='menu icon-right'><LinkedInIcon /></a>
                 </Box>
             </Box>
             <Box
@@ -43,34 +43,36 @@ const Navbar = () => {
                     color: 'white',
                 }}
             >
-                <Box
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                    }}
-                >
-                    <Avatar alt="Travis Howard" src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" />
-                    <Typography sx={{ marginLeft: '10px', color: 'white', fontSize: '30px' }}>Akash</Typography>
-                </Box>
+                <a href='/'>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <Avatar alt="Travis Howard" src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" />
+                        <Typography sx={{ marginLeft: '10px', color: 'white', fontSize: '30px' }}>Akash</Typography>
+                    </Box>
+                </a>
                 <Box className='link-menu' sx={{
                     display: 'flex',
                     justifyContent: 'space-between',
                     width: '25%',
                 }}>
-                    <a className='menu'>About</a>
-                    <a className='menu'>Skills</a>
-                    <a className='menu'>Projects</a>
-                    <a className='menu'>Contact</a>
+                    <a href='/' className='menu'>About</a>
+                    <a href='/' className='menu'>Skills</a>
+                    <a href='/' className='menu'>Projects</a>
+                    <a href='/' className='menu'>Contact</a>
                 </Box>
                 <Box className='link-menu' sx={{
                     display: 'flex',
-                    justifyContent: 'space-between',                    
+                    justifyContent: 'space-between',
                 }}>
-                    <a className='menu'><GitHubIcon /></a>
-                    <a className='menu icon-right'><LinkedInIcon /></a>                    
+                    <a href='/' className='menu'><GitHubIcon /></a>
+                    <a href='/' className='menu icon-right'><LinkedInIcon /></a>
                 </Box>
                 <Box onClick={() => setOpen(!open)} className='menu-icon'>
-                    <a className='menu'>{open ? <ClearIcon /> : <MenuIcon />}</a>
+                    <a href='#j' className='menu'>{open ? <ClearIcon /> : <MenuIcon />}</a>
                 </Box>
             </Box>
         </div>
