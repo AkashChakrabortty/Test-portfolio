@@ -1,11 +1,13 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import { Typography } from '@mui/material';
+import { theme } from './Theme/customTheme';
 const Footer = () => {
     return (
         <div>
-          <Box sx={{ p: 2, textAlign: 'center', fontSize:'20px'}}>
-          <p className='default-font'>Copyright © 2023 - All right reserved by <span className='secondary-font'>Akash Chakrabortty</span></p>
-         </Box>
+         <Typography sx={{color: theme.primaryColor,textAlign:'center'}} >
+         Copyright © 2023 - All right reserved by <Typography component='span' sx={{color: theme.secondayColor}}>Akash Chakrabortty</Typography>
+         </Typography>
         </div>
     );
 };
