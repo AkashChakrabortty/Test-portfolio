@@ -1,13 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import { Button } from '@mui/material';
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
+import KnowMeMore from './components/KnowMeMore';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-   
-
-    </div>
+      <div className='parent-div'>
+        <Navbar />
+        <Banner />
+        <KnowMeMore />
+        <Skills />
+        <Projects />
+        <ContactMe />
+        <Footer />
+      </div>
+    </div >
   );
 }
 
