@@ -14,8 +14,8 @@ function App() {
         <Navbar />
         <div className='parent-wrapper'>
           <Banner />
-          <KnowMeMore />
-          <Skills />
+          {/* <KnowMeMore />
+          <Skills /> */}
           <Projects />
           <ContactMe />
           <Footer />
