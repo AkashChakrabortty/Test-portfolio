@@ -69,3 +69,10 @@
   box-shadow: 0px 0px 25px -100px rgba(0,0,0,0.1);
 }
 
+/* ------ banner ------- */
+@media screen and (max-width: 1023px) {
+  
+  .banner-parent {
+    flex-direction: column;
+  }
+}

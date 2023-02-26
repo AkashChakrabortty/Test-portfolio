@@ -6,7 +6,7 @@ const Banner = () => {
     
     return (
         <div>
-            <Box sx={{
+            <Box className='banner-parent' sx={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between'
@@ -29,7 +29,7 @@ const Banner = () => {
                         </span>
                     </Typography>
                     <Typography sx={{
-                        width: '500px',
+                        maxWidth: '500px',
                         padding: '20px 0px'
                     }}>
                         I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.
